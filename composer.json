@@ -19,8 +19,8 @@
         "phpunit/phpunit": "4.2.6"
     },
     "autoload": {
-        "psr-0": {
-            "Psecio": "src/"
+        "psr-4": {
+            "Psecio\\": "Psecio/"
         }
     }
 }
