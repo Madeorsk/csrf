@@ -128,9 +128,10 @@ class Manager
      * Verify the token provided
      *
      * @param string $token Token to validate
+     * @param boolean $delete Delete valid token or not
      * @return boolean Result of verification for current storage methods
      */
-    public function verify($token)
+    public function verify($token, $delete = true)
     {
         // first, split off our hash
         list($key, $hash) = $this->splitToken($token);
@@ -142,7 +143,9 @@ class Manager
             if ($check === null && $result === true) {
                 $result = false;
             } else {
-                $storage->delete($key);
+                if ($check === null || $delete)
+                    // Delete if invalid token or delete option enabled
+                    $storage->delete($key);
             }
         }
 
