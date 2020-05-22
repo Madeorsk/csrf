@@ -3,7 +3,7 @@
     "type":"library",
     "description":"CSRF Token Generation Library",
     "keywords":["csrf","token","security"],
-    "homepage":"https://github.com/psecio/csrf.git",
+    "homepage":"https://github.com/madeorsk/csrf",
     "license":"MIT",
     "authors":[
         {
@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Psecio\\": "Psecio/"
+            "Psecio\\": "src/Psecio"
         }
     }
 }
