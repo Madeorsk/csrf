@@ -1,5 +1,5 @@
 {
-    "name":"psecio/csrf",
+    "name":"madeorsk/nocsrf",
     "type":"library",
     "description":"CSRF Token Generation Library",
     "keywords":["csrf","token","security"],
@@ -10,6 +10,11 @@
             "name":"Chris Cornutt",
             "email":"ccornutt@phpdeveloper.org",
             "homepage":"http://www.phpdeveloper.org/"
+        },
+        {
+            "name":"Madeorsk",
+            "email":"madeorsk@protonmail.com",
+            "homepage":"https://madeorsk.com"
         }
     ],
     "require":{
